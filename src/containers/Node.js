@@ -43,7 +43,7 @@ export class Node extends Component {
         {typeof parentId !== "undefined" && (
           <a
             href="#"
-            onClick={this.handleRemoveClick} // eslint-disable jsx-a11y/anchor-is-valid
+            onClick={this.handleRemoveClick}
             style={{ color: "lightgray", textDecoration: "none" }}
           >
             ×
@@ -52,10 +52,7 @@ export class Node extends Component {
         <ul>
           {childIds.map(this.renderChild)}
           <li key="add">
-            <a
-              href="#" // eslint-disable jsx-a11y/anchor-is-valid
-              onClick={this.handleAddChildClick}
-            >
+            <a href="#" onClick={this.handleAddChildClick}>
               Add child
             </a>
           </li>
